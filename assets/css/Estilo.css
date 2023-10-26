@@ -122,3 +122,34 @@ body {
     width: 50%;
     height: 30%; 
 }
+
+header {
+    color: #699c44;
+    padding: 20px;
+}
+
+.pag .texto-pag{
+    text-align: justify;
+    font-size: 18px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 150px;
+    color: #ffffff;
+}
+
+.pag{
+    margin: 20px;
+    padding: 0;
+    background-color: #699c44; 
+    border: 1px solid #ccc; 
+    border-radius: 20px;
+    margin-left: 450px;
+    margin-right: 450px;
+}
+
+.pag .titulo-pag{
+    color: #ffffff;
+    padding: 20px;
+    font-size: 16px;
+}
+
