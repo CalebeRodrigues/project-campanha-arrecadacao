@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="./assets/css/Estilo.css" rel="stylesheet"/>
+<link href="favicon1.png" rel="shortcut icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<title>AgroLifeNews</title>
+<style>
+    .pageNoticiasimg {
+  --s: 250px;   /* the size of the image */
+  --b: 8px;     /* the border thickness*/
+  --g: 14px;    /* the gap */
+  --c: #4ECDC4; /* the color */
+  
+  width: var(--s);
+  aspect-ratio: 1;
+  outline: calc(var(--s)/2) solid #0009;
+  outline-offset: calc(var(--s)/-2);
+  cursor: pointer;
+  transition: .3s;
+}
+.pageNoticiasimg:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: var(--g);
+}
+
+.pageNoticiasimg + .pageNoticiasimg {
+  border-radius: 50%;
+}
+
+
+.pageNoticiasbody {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 50px;
+  place-content: center;
+  place-items: center;
+  background: #C8C8A9;
+}
+</style>
+</head>
+<body>
+<nav style="margin-bottom: 20px;">
+<div class="logo">
+<a href="index.html">
+<i class="fas fa-leaf"></i> AgroLifeNews
+            </a>
+</div>
+<ul>
+<li> <a href="#"> <i class="fas fa-home"></i> Pagina Inicial </a> </li>
+<li> <a href="Sobre.html"> <i class="fas fa-info-circle"></i> Sobre </a> </li>
+<li> <a href="Anuncio.html"> <i class="fas fa-ad"></i> Anuncios </a> </li>
+<li> <a href="Login.html"> <i class="fas fa-sign-in-alt"></i> Login </a> </li>
+</ul>
+</nav>
+<!-- crie uma div centralizada e coloque o texto do regioesBrasil de forma elegante use tailwind -->
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h1 class="text-3xl text-center font-bold">Regiões do Brasil</h1>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="bg-white text-gray-900 rounded-lg shadow-lg p-8 my-4">
+    <h1 class="text-3xl text-center font-bold mb-4 ">Região Norte</h1>
+    <p>
+        Na região Norte, que contempla os estados do Amazonas, Pará, Acre, Roraima, Rondônia, Amapá e Tocantins, destacam-se:
+        pressão pela expansão das atividades agrárias no “MATOPIBA” (Maranhão, Tocantins, Piauí e Bahia);
+        atividades agrícolas com ênfase na pecuária primitiva;
+        atividades de extrativismo vegetal não madeireiro, como seringa, nozes e retirada de frutos de árvores nativas (castanha-do-pará e açaí, por exemplo);
+        pecuária predominantemente extensiva, com criação de gado bovino em áreas de pastagens naturais;
+        casos de conflitos entre preservação ambiental, áreas de proteção, áreas de cultivos e atividades de extração madeireira.
+    </p>
+    <img alt="Placeholder Image" class="rounded-lg mb-4 mx-auto w-1/4 my-10 pageNoticiasimg" src="./imagensNoticias/imagemRegiaoNorte.png"/>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="bg-white text-gray-900 rounded-lg shadow-lg p-8 my-4">
+    <h1 class="text-3xl text-center font-bold mb-4">Região Nordeste</h1>
+    <p>
+        Na região Nordeste, que contempla os estados da Bahia, Alagoas, Ceará, Maranhão, Paraíba, Pernambuco, Piauí, Rio Grande do Norte e Sergipe, destacam-se:
+        plantations presentes desde os tempos coloniais;
+        predomínio do plantio de cana-de-açúcar voltada para produção de álcool e açúcar;
+        presença da agricultura familiar e produção mecanizada na região do semiárido;
+        frutas entre os principais cultivos, com destaque para melão, uva, manga e abacaxi.
+        agricultura de subsistência.
+    </p>
+    <img alt="Placeholder Image" class="rounded-lg mb-4 mx-auto w-1/4 my-10 pageNoticiasimg" src="./imagensNoticias/imagemNordeste.png"/>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="bg-white text-gray-900 rounded-lg shadow-lg p-8 my-4">
+    <h1 class="text-3xl text-center font-bold mb-4">Região Centro-Oeste</h1>
+    <p>
+        Na região Centro-Oeste, que contempla os estados do Mato Grosso, Mato Grosso do Sul, Goiás e a capital federativa, destacam-se:
+        aumento constante do cultivo a partir da produção mecanizada;
+        expansão em direção à Amazônia;
+        a criação de gado bovino para corte é expressiva;
+        uma das principais produtoras de grãos do país, com destaque para a soja.
+    </p>
+    <img alt="Placeholder Image" class="rounded-lg mb-4 mx-auto w-1/4 my-10 pageNoticiasimg" src="./imagensNoticias/imagemCentroOeste.png"/>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="bg-white text-gray-900 rounded-lg shadow-lg p-8 my-4">
+    <h1 class="text-3xl text-center font-bold mb-4">Região Sudeste</h1>
+    <p>
+        Na região Sudeste, que contempla os estados de São Paulo, Rio de Janeiro, Espírito Santo e Minas Gerais, destacam-se:
+        predomínio de mecanização e produção com base em procedimentos intensivos de alta tecnologia;
+        agricultura subordinada à indústria;
+        altos índices de produtividade e uso do solo;
+        maior presença de maquinários;
+        geração de empregos é limitada ou acontece pelas agroindústrias;
+        cultivo de café, cana-de-açúcar, laranjas e outras frutas.
+    </p>
+    <img alt="Placeholder Image" class="rounded-lg mb-4 mx-auto w-1/4 my-10 pageNoticiasimg" src="./imagensNoticias/imagemSudeste.png"/>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="bg-white text-gray-900 rounded-lg shadow-lg p-8 my-4">
+    <h1 class="text-3xl text-center font-bold mb-4">Região Sul</h1>
+    <p>
+        Na região Sul, que contempla os estados do Rio Grande do Sul, Santa Catarina e Paraná, destacam-se:
+        expansão da soja voltada para a exportação;
+        intensiva modernização agrícola;
+        A agricultura dessa região é a que se encontra mais subordinada à indústria. Devido à maior presença de máquinas, sendo também a região onde a geração de empregos é limitada.
+        produção agrícola predominantemente no oeste do Paraná, oeste de Santa Catarina e norte do Rio Grande do Sul;
+        cultiva-se soja, milho, cana-de-açúcar e algodão em larga escala;
+        na pecuária, a criação de porcos e aves é predominante.
+    </p>
+    <img alt="Placeholder Image" class="rounded-lg mb-4 mx-auto w-1/4 my-10 pageNoticiasimg" src="./imagensNoticias/imagemRegiaoSul.png"/>
+</div>
+</div>
+</div>
+</body>
+</html>

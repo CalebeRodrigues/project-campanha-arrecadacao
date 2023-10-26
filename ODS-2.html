@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="./assets/css/Estilo.css" rel="stylesheet"/>
+<link href="favicon1.png" rel="shortcut icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<title>AgroLifeNews</title>
+    <style>
+        .pageNoticiasimg {
+      --s: 250px;   /* the size of the image */
+      --b: 8px;     /* the border thickness*/
+      --g: 14px;    /* the gap */
+      --c: #4ECDC4; /* the color */
+      
+      width: var(--s);
+      aspect-ratio: 1;
+      outline: calc(var(--s)/2) solid #0009;
+      outline-offset: calc(var(--s)/-2);
+      cursor: pointer;
+      transition: .3s;
+    }
+    .pageNoticiasimg:hover {
+      outline: var(--b) solid var(--c);
+      outline-offset: var(--g);
+    }
+    
+    .pageNoticiasimg + .pageNoticiasimg {
+      border-radius: 50%;
+    }
+    
+    
+    .pageNoticiasbody {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      grid-auto-flow: column;
+      gap: 50px;
+      place-content: center;
+      place-items: center;
+      background: #C8C8A9;
+    }
+    </style>
+</head>
+<body>
+    <nav style="margin-bottom: 20px;"> 
+        <div class="logo">
+            <a href="index.html">
+                <i class="fas fa-leaf"></i> AgroLifeNews
+            </a>
+        </div>        
+        <ul>
+            <li> <a href="#"> <i class="fas fa-home"></i> Pagina Inicial </a> </li>
+            <li> <a href="Sobre.html"> <i class="fas fa-info-circle"></i> Sobre </a> </li>
+            <li> <a href="Anuncio.html"> <i class="fas fa-ad"></i> Anuncios </a> </li>
+            <li> <a href="Login.html"> <i class="fas fa-sign-in-alt"></i> Login </a> </li>
+        </ul>
+    </nav>
+    <!-- COMEÇA AQUI -->
+    <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+        <h1 class="text-3xl text-center font-bold">ODS 2: Fome Zero e Agricultura Sustentável</h1>
+        </div>
+        </div>
+        </div>
+        <div class="container">
+            <div class="row">
+            <div class="bg-white text-gray-900 rounded-lg shadow-lg p-8 my-4">
+                <p>
+                Acabar com a fome, garantir a segurança alimentar, melhorar a nutrição e promover a agricultura sustentável.
+                </p>
+            </div>
+            </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                <div class="bg-white text-gray-900 rounded-lg shadow-lg p-8 my-4">
+                    <h1 class="text-3xl text-center font-bold mb-4">INSEGURANÇA ALIMENTAR</h1>
+                    <p>
+                        Quando as pessoas não possuem acesso regular e contínuo a uma quantidade suficiente e de qualidade adequada de alimentos para manter sua saúde, isso é conhecido como insegurança alimentar. 
+                        Existem dois principais tipos de insegurança alimentar: 
+                        A insegurança alimentar moderada ocorre quando uma pessoa tem sua capacidade de acessar alimentos prejudicada devido à renda insuficiente ou à falta de acesso a alimentos. Como resultado, ela é forçada a reduzir tanto a quantidade quanto a qualidade dos alimentos que consome. 
+                        A grave insegurança alimentar ocorre quando o indivíduo não possui acesso a alimentos, passando longos períodos sem se alimentar.                         
+                    </p>
+                    <img alt="Placeholder Image" class="rounded-lg mb-4 mx-auto w-1/4 my-10 pageNoticiasimg" src="./imagensNoticias/insegurança alimentar.jpeg"/>
+                </div>
+                </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                    <div class="bg-white text-gray-900 rounded-lg shadow-lg p-8 my-4">
+                        <h1 class="text-3xl text-center font-bold mb-4">FOME NO MUNDO</h1>
+                        <p>
+                            Segundo o portal Gov.br, em 2022, 70,3 milhões de brasileiros (32,8% da população) sofrem de insegurança alimentar moderada e 21,1 milhões de pessoas (9,9% da população) sofrem de insegurança alimentar grave. 
+Mais de 690 milhões de pessoas (8,9% da população) sofrem de insegurança alimentar em todo o mundo. Segundo o site Espaço Conhecimento da UFMG, a África é o continente  mais exposto à fome devido a conflitos, guerras e  clima. A Ásia e a América Latina perdem apenas para a África como as regiões mais atingidas pela fome, mas ambas as regiões registaram declínios.
+                        </p>
+                        <img alt="Placeholder Image" class="rounded-lg mb-4 mx-auto w-1/4 my-10 pageNoticiasimg" src="./imagensNoticias/fome no mundo.jpg"/>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                        <div class="bg-white text-gray-900 rounded-lg shadow-lg p-8 my-4">
+                            <h1 class="text-3xl text-center font-bold mb-4">COMO A AGRICULTURA SUSTENTÁVEL VAI AJUDAR A SUPRIR A FOME?
+                            </h1>
+                            <p>
+                                Este tipo de agricultura inclui três fatores principais: meio ambiente, sociedade e economia. Ou seja, esta forma de agricultura deve respeitar o  ambiente, utilizando técnicas que não agridam o solo, o ar e a água, garantindo que a geração presente seja alimentada sem afetar as gerações futuras. Não deve utilizar trabalho infantil ou escravo e deve respeitar as leis laborais dos trabalhadores nos campos para garantir a justiça social. E, finalmente, é economicamente eficaz. Além disso, neste tipo de agricultura é necessário produzir alimentos saudáveis.
+                            </p>
+                            <img alt="Placeholder Image" class="rounded-lg mb-4 mx-auto w-1/4 my-10 pageNoticiasimg" src="./imagensNoticias/agricultura sust.jpg"/>
+                        </div>
+                        </div>
+                        </div>
+            <!-- TERMINA AQUI -->
+</body>
+</html>
