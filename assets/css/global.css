@@ -153,3 +153,110 @@ header {
     font-size: 16px;
 }
 
+
+
+/* Estilos Responsivos */
+@media screen and (max-width: 1024px) {
+    /* Ajustes para a barra de navegação em laptops e tablets */
+    nav {
+        padding: 10px 40px;
+    }
+
+    nav .logo a {
+        font-size: 30px;
+    }
+
+    nav li a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    /* Ajustes para os botões do banner em laptops e tablets */
+    .texto .botoes button {
+        height: 45px;
+        width: 140px;
+        font-size: 16px;
+        margin: 0 6px;
+    }
+
+    /* Ajustes para a linha do tempo em laptops e tablets */
+    .timeline::before {
+        left: 50px;
+    }
+
+    .timeline-content {
+        max-width: 80%;
+        width: auto;
+        margin-left: 70px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Ajustes para a barra de navegação em tablets e smartphones */
+    nav {
+        padding: 10px 20px;
+    }
+
+    nav .logo a {
+        font-size: 26px;
+    }
+
+    nav li a {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+
+    /* Ajustes para os botões do banner em tablets e smartphones */
+    .texto .botoes button {
+        height: 40px;
+        width: 120px;
+        font-size: 14px;
+        margin: 0 4px;
+    }
+
+    /* Ajustes para a linha do tempo em tablets e smartphones */
+    .timeline::before {
+        left: 30px;
+    }
+
+    .timeline-content {
+        max-width: 90%;
+        width: auto;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Ajustes para a barra de navegação em smartphones */
+    nav {
+        padding: 10px;
+    }
+
+    nav .logo a {
+        font-size: 22px;
+    }
+
+    nav li a {
+        font-size: 10px;
+        padding: 6px 8px;
+    }
+
+    /* Ajustes para os botões do banner em smartphones */
+    .texto .botoes button {
+        height: 35px;
+        width: 110px;
+        font-size: 12px;
+        margin: 0 3px;
+    }
+
+    /* Ajustes para a linha do tempo em smartphones */
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-content {
+        max-width: 95%;
+        width: auto;
+        margin-left: 20px;
+    }
+}
