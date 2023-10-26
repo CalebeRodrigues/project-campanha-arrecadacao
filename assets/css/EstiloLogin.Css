@@ -1,141 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
+body{
+  background-color: #A8A8A8;
   font-family: 'Roboto', sans-serif;
 }
 
-body {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed
-  
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 100px;
-}
-
-.card {
-  background-color: #699c44;
-  padding: 30px;
-  border-radius: 4%;
-  box-shadow: 3px 3px 1px 0px #00000060
-}
-
-h1{
-  text-align: center;
-  margin-bottom: 20px;
-  color: #ffffff
-}
-
-.label-float input{
-  width: 100%;
-  padding: 5px 5px;
-  display: inline-block;
-  border: 0;
-  border-bottom: 2px solid #ffffff;
-  background-color: transparent;
-  outline: none;
-  min-width: 180px;
-  font-size: 16px;
-  transition: all .3s ease-out;
-  border-radius: 0;
-  
-}
-
-.label-float{
-  position: relative;
-  padding-top: 13px;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
-.label-float input:focus{
-  border-bottom: 2px solid #ffffff;
-}
-
-.label-float label{
-  color: #ffffff;
-  pointer-event: none;
+.container{
+  /*border:1px solid white;*/
+  width: 600px;
+  height: 350px;
   position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: 13px;
-  transition: all .3s ease-out;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  display: inline-flex; 
+}
+.backbox{  
+  background-color: #404040;
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  transform: translate(0,-50%);
+  top:50%;
+  display: inline-flex;
 }
 
-.label-float input:focus + label,
-.label-float input:valid + label{
-  font-size: 13px;
-  margin-top: 0;
-  color: #ffffff
+.frontbox{
+  background-color: white;
+  border-radius: 20px;
+  height: 100%;
+  width: 50%;
+  z-index: 10;
+  position: absolute;
+  right:0;
+  margin-right: 3%;
+  margin-left: 3%;
+  transition: right .8s ease-in-out;
 }
 
-button{
-  background-color: transparent;
-  border-color: #ffffff;
-  color: #ffffff;
-  padding: 7px;
-  font-weight: bold;
-  font-size: 12pt;
+.moving{
+  right:45%;
+}
+
+.loginMsg, .signupMsg{
+  width: 50%;
+  height: 100%;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.loginMsg .title,
+.signupMsg .title{
+  font-weight: 300;
+  font-size: 23px;
+}
+
+.loginMsg p,
+.signupMsg p {
+  font-weight: 100;
+}
+
+.textcontent{
+  color:white;
+  margin-top:65px;
+  margin-left: 12%;
+}
+
+.loginMsg button,
+.signupMsg button {
+  background-color: #404040;
+  border: 2px solid white;
+  border-radius: 10px;
+  color:white;
+  font-size: 12px;
+  box-sizing: content-box;
+  font-weight: 300;
+  padding:10px;
   margin-top: 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  outline: none;
-  transition: all .4s ease-out;
 }
 
-button:hover{
-  background-color: #ffffff;
-  color: #699c44;
-}
-
-.justify-center{
-  display: flex;
-  justify-content: center;
-}
-
-hr{
-  margin-top: 10%;
-  margin-bottom: 10%;
-  width: 60%;
-}
-
-p{
-  color: #ffffff;
-  font-size: 14pt;
+/* front box content*/
+.login, .signup{
+  padding: 20px;
   text-align: center;
 }
 
-a{
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: none;
-  transition: all .3s ease-out;
+.login h2,
+.signup h2 {
+  color: #35B729;
+  font-size:22px;
 }
 
-a:hover{
-  color: #ffffff;
+.inputbox{
+  margin-top:30px; 
+}
+.login input, 
+.signup input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: #f2f2f2;
+  border: none;
+  margin-bottom:20px;
+  font-size: 12px;
 }
 
-.fa-eye{
+.login button,
+.signup button{
+  background-color: #35B729;
+  border: none;
+  color:white;
+  font-size: 12px;
+  font-weight: 300;
+  box-sizing: content-box;
+  padding:10px;
+  border-radius: 10px;
+  width: 60px;
   position: absolute;
-  top: 15px;
-  right: 10px;
+  right:30px;
+  bottom: 30px;
   cursor: pointer;
-  color: #ffffff;
 }
 
- #msgError{
-  text-align: center;
-  color: #ff0000;
-  background-color: #ffbbbb;
-  padding: 10px;
-  border-radius: 4px;
+/* Fade In & Out*/
+.login p {
+  cursor: pointer;
+  color:#404040;
+  font-size:15px;
+}
+
+.loginMsg, .signupMsg{
+  /*opacity: 1;*/
+  transition: opacity .8s ease-in-out;
+}
+
+.visibility{
+  opacity: 0;
+}
+
+.hide{
   display: none;
 }

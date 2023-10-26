@@ -6,31 +6,72 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/Estilo.css">
+    <link rel="stylesheet" href="./assets/css/EstiloCard.css">
     <link rel="shortcut icon" href="favicon1.png" type="image/x-icon">
     <title>AgroLifeNews</title>
 </head>
 <body>
     <nav style="margin-bottom: 20px;"> 
         <div class="logo">
-            <a href="index.html">
+            <a href="./index.html">
                 <i class="fas fa-leaf"></i> AgroLifeNews
             </a>
         </div>        
         <ul>
             <li> <a href="#"> <i class="fas fa-home"></i> Pagina Inicial </a> </li>
-            <li> <a href="Sobre.html"> <i class="fas fa-info-circle"></i> Sobre </a> </li>
-            <li> <a href="Anuncio.html"> <i class="fas fa-ad"></i> Anuncios </a> </li>
-            <li> <a href="Login.html"> <i class="fas fa-sign-in-alt"></i> Login </a> </li>
+            <li> <a href="./Sobre.html"> <i class="fas fa-info-circle"></i> Sobre </a> </li>
+            <li> <a href="./Anuncio.html"> <i class="fas fa-ad"></i> Anuncios </a> </li>
+            <li> <a href="./Login.html"> <i class="fas fa-sign-in-alt"></i> Login </a> </li>
         </ul>
     </nav>
-
-    <div style="margin: 0 7%">
-
-        <div class="chart-container">
-            <canvas id="fomeChart"></canvas>
+    <div class="blog-card">
+        <div class="meta">
+          <div class="photo" style="background-image: url(https://s4.static.brasilescola.uol.com.br/be/2022/06/fome-na-africa.jpg)"></div>
+          <ul class="details">
+            <li class="author"><a href="#">John Doe</a></li>
+            <li class="date">Aug. 24, 2015</li>
+            <li class="tags">
+              <ul>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Code</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="GraficoPais.js"></script>
+        <div class="description">
+          <h1>Fome no Somália 54%</h1>
+          <h2>Opening a door to the future</h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+          <p class="read-more">
+            <a href="#">Ler Mais</a>
+          </p>
+        </div>
+      </div>
+      <div class="blog-card alt">
+        <div class="meta">
+          <div class="photo" style="background-image: url(https://fastcompanybrasil.com/wp-content/webp-express/webp-images/uploads/2022/10/fome_desperdicio_alimentos-1536x864.jpg.webp)"></div>
+          <ul class="details">
+            <li class="author"><a href="#">Jane Doe</a></li>
+            <li class="date">July. 15, 2015</li>
+            <li class="tags">
+              <ul>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Code</a></li>
+                <li><a href="#">JavaScript</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="description">
+          <h1>Burundi - 2 Ranking Fome</h1>
+          <h2>Java is not the same as JavaScript</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+          <p class="read-more">
+            <a href="#">Ler Mais</a>
+          </p>
+        </div>
+      </div>
 </body>
 </html>
