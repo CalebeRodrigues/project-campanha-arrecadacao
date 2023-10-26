@@ -5,74 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/Estilo.css">
-    <link rel="stylesheet" href="./assets/css/EstiloCard.css">
-    <link rel="shortcut icon" href="favicon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/card.css">
+    <link rel="shortcut icon" href="./assets/img/favicon1.png" type="image/x-icon">
     <title>AgroLifeNews</title>
 </head>
 <body>
     <nav style="margin-bottom: 20px;"> 
         <div class="logo">
-            <a href="./index.html">
+            <a href="/">
                 <i class="fas fa-leaf"></i> AgroLifeNews
             </a>
         </div>        
         <ul>
-            <li> <a href="#"> <i class="fas fa-home"></i> Pagina Inicial </a> </li>
-            <li> <a href="./Sobre.html"> <i class="fas fa-info-circle"></i> Sobre </a> </li>
-            <li> <a href="./Anuncio.html"> <i class="fas fa-ad"></i> Anuncios </a> </li>
-            <li> <a href="./Especialistas.html"> <i class="fas fa-user"></i> Especialistas </a> </li>
-            <li> <a href="./Login.html"> <i class="fas fa-sign-in-alt"></i> Login </a> </li>
+            <li> <a href="/"> <i class="fas fa-home"></i> Pagina Inicial </a> </li>
+            <li> <a href="./sobre.html"> <i class="fas fa-info-circle"></i> Sobre </a> </li>
+            <li> <a href="./anuncio.html"> <i class="fas fa-ad"></i> Agricultores </a> </li>
+            <li> <a href="./login.html"> <i class="fas fa-sign-in-alt"></i> Login </a> </li>
         </ul>
     </nav>
+
+
+    <div class="blog-card alt">
+      <a href="./noticias/agriculta_brasil.html" class="meta">
+        <div class="photo" style="background-image: url('./assets/img/noticia_agricultura.jpg')"></div>
+        <ul class="details">
+          <li>Leia mais</li>
+        </ul>
+      </a>
+      <div class="description">
+        <h1>Agricultura no Brasil</h1>
+        <h2>Conheça sobre a agricultura brasileira</h2>
+        <p> A agricultura brasileira desempenha um papel fundamental economia brasileira, especialmente porque é responsável por uma parte importante do PIB (Produto Interno Bruto) do Brasil e cria muitos empregos...</p>
+        <p class="read-more">
+          <a href="./noticias/agriculta_brasil.html">Ler Mais</a>
+        </p>
+      </div>
+    </div>
+    
     <div class="blog-card">
-        <div class="meta">
-          <div class="photo" style="background-image: url(https://s4.static.brasilescola.uol.com.br/be/2022/06/fome-na-africa.jpg)"></div>
-          <ul class="details">
-            <li class="author"><a href="#">John Doe</a></li>
-            <li class="date">Aug. 24, 2015</li>
-            <li class="tags">
-              <ul>
-                <li><a href="#">Learn</a></li>
-                <li><a href="#">Code</a></li>
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div class="description">
-          <h1>Fome no Somália 54%</h1>
-          <h2>Sobre a crise na Somália</h2>
-          <p>Estima-se que 7.8 milhões de pessoas na Somália/Somalilândia enfrentam grave escassez de alimentos no país. A crise da fome é causada pelo impacto combinado de conflitos, choques climáticos imprevisíveis.</p>
-          <p class="read-more">
-            <a href="#">Ler Mais</a>
-          </p>
-        </div>
+      <a href="./noticias/regioes.html" class="meta">
+        <div class="photo" style="background-image: url('./assets/img/brasil.png')"></div>
+        <ul class="details">
+          <li>Leia mais</li>
+        </ul>
+      </a>
+      <div class="description">
+        <h1>Regiões do Brasil</h1>
+        <h2>Conheça sobre suas formas de agricultura</h2>
+        <p> A agricultura brasileira desempenha um papel fundamental economia brasileira, especialmente porque é responsável por uma parte importante do PIB (Produto Interno Bruto) do Brasil e cria muitos empregos...</p>
+        <p class="read-more">
+          <a href="./noticias/regioes.html">Ler Mais</a>
+        </p>
       </div>
-      <div class="blog-card alt">
-        <div class="meta">
-          <div class="photo" style="background-image: url(https://fastcompanybrasil.com/wp-content/webp-express/webp-images/uploads/2022/10/fome_desperdicio_alimentos-1536x864.jpg.webp)"></div>
-          <ul class="details">
-            <li class="author"><a href="#">Jane Doe</a></li>
-            <li class="date">July. 15, 2015</li>
-            <li class="tags">
-              <ul>
-                <li><a href="#">Learn</a></li>
-                <li><a href="#">Code</a></li>
-                <li><a href="#">JavaScript</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div class="description">
-          <h1>Burundi - 2 Ranking Fome</h1>
-          <h2>Burundi e região do Lago Chade têm 6 milhões de pessoas passando fome</h2>
-          <p>No Burundi, 2,3 milhões de pessoas sofrem de insegurança alimentar, enquanto mais de 366 mil se viram obrigadas a deixar suas casas</p>
-          <p class="read-more">
-            <a href="#">Ler Mais</a>
-          </p>
-        </div>
+    </div>
+    
+    <div class="blog-card alt">
+      <a href="./noticias/ods2.html" class="meta">
+        <div class="photo" style="background-image: url('./assets/img/fome.jpg')"></div>
+        <ul class="details">
+          <li>Leia mais</li>
+        </ul>
+      </a>
+      <div class="description">
+        <h1>Fome zero e Agricultura sustentável</h1>
+        <h2>ODS 2</h2>
+        <p> Acabar com a fome, garantir a segurança alimentar, melhorar a nutrição e promover a agricultura sustentável....</p>
+        <p class="read-more">
+          <a href="./noticias/ods2.html">Ler Mais</a>
+        </p>
       </div>
+    </div>
+
+    
+    <div class="blog-card">
+      <a href="./noticias/agricultura_continentes.html" class="meta">
+        <div class="photo" style="background-image: url('./assets/img/mundo_verde.jpg')"></div>
+        <ul class="details">
+          <li>Leia mais</li>
+        </ul>
+      </a>
+      <div class="description">
+        <h1>Agricultura por continente</h1>
+        <h2>Conheça sobre a agricultura nos continentes</h2>
+        <p> A Ásia é uma importante região agrícola, sendo a China um dos maiores produtores de arroz, trigo e soja, sendo culturas importantes tanto para consumo...</p>
+        <p class="read-more">
+          <a href="./noticias/agricultura_continentes.html">Ler Mais</a>
+        </p>
+      </div>
+    </div>
+    
 </body>
 </html>

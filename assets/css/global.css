@@ -143,18 +143,13 @@ header {
     background-color: #699c44; 
     border: 1px solid #ccc; 
     border-radius: 20px;
-    margin-left: 450px;
-    margin-right: 450px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .pag .titulo-pag{
     color: #ffffff;
     padding: 20px;
     font-size: 16px;
-}
-
-.img-pag{
-    width: 320px;
-    height: 18px;
 }
 

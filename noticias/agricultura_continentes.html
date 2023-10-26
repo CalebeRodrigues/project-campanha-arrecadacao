@@ -6,7 +6,7 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="./assets/css/Estilo.css" rel="stylesheet"/>
+<link href="../assets/css/global.css" rel="stylesheet"/>
 <link href="favicon1.png" rel="shortcut icon" type="image/x-icon"/>
 <script src="https://cdn.tailwindcss.com"></script>
 <title>AgroLifeNews</title>
@@ -34,6 +34,10 @@
 }
 
 
+.container {
+        margin: auto auto;
+    }
+    
 .pageNoticiasbody {
   margin: 0;
   min-height: 100vh;
@@ -47,19 +51,21 @@
 </style>
 </head>
 <body>
-<nav style="margin-bottom: 20px;">
-<div class="logo">
-<a href="index.html">
-<i class="fas fa-leaf"></i> AgroLifeNews
-            </a>
-</div>
-<ul>
-<li> <a href="#"> <i class="fas fa-home"></i> Pagina Inicial </a> </li>
-<li> <a href="Sobre.html"> <i class="fas fa-info-circle"></i> Sobre </a> </li>
-<li> <a href="Anuncio.html"> <i class="fas fa-ad"></i> Anuncios </a> </li>
-<li> <a href="Login.html"> <i class="fas fa-sign-in-alt"></i> Login </a> </li>
-</ul>
+
+  <nav style="margin-bottom: 20px;"> 
+    <div class="logo">
+        <a href="/">
+            <i class="fas fa-leaf"></i> AgroLifeNews
+        </a>
+    </div>        
+    <ul>
+        <li> <a href="/"> <i class="fas fa-home"></i> Pagina Inicial </a> </li>
+        <li> <a href="./sobre.html"> <i class="fas fa-info-circle"></i> Sobre </a> </li>
+        <li> <a href="./anuncio.html"> <i class="fas fa-ad"></i> Agricultores </a> </li>
+        <li> <a href="./login.html"> <i class="fas fa-sign-in-alt"></i> Login </a> </li>
+    </ul>
 </nav>
+
 <!-- crie uma div centralizada e coloque o texto do regioesBrasil de forma elegante use tailwind -->
 <div class="container">
 <div class="row">
@@ -78,7 +84,7 @@
     Técnica:<p>
     A rizicultura, ou agricultura de monções, é uma técnica predominante na Ásia, aproveitando o clima quente e úmido para a produção de arroz.
     </p>
-    <img alt="Placeholder Image" class="rounded-lg mb-4 mx-auto w-1/4 my-10 pageNoticiasimg" src="./imagensNoticias/asia.jpg"/>
+    <img alt="Placeholder Image" class="rounded-lg mb-4 mx-auto w-1/4 my-10 pageNoticiasimg" src="../assets/img/asia.jpg"/>
 </div>
 </div>
 </div>
@@ -92,7 +98,7 @@
         A agricultura orgânica tem sido incentivada, como evidenciado pelo Instituto de Agricultura Orgânica do Quênia, que ensina técnicas de cultivo orgânico para enfrentar os desafios da agricultura sustentável. 
         A desigualdade na distribuição de terras é um grande obstáculo à agricultura na África, e isto é evidente na cultura agrária da África do Sul, onde uma minoria possui as terras mais produtivas.
     </p>
-    <img alt="Placeholder Image" class="rounded-lg mb-4 mx-auto w-1/4 my-10 pageNoticiasimg" src="./imagensNoticias/africa.jpg"/>
+    <img alt="Placeholder Image" class="rounded-lg mb-4 mx-auto w-1/4 my-10 pageNoticiasimg" src="../assets/img/africa.jpg"/>
 </div>
 </div>
 </div>
@@ -105,7 +111,7 @@
         Técnica:<p>
         A estrutura de produção agropecuária na América Latina tem uma forte inclinação para a exportação, com extensas propriedades monocultoras dedicadas a produtos específicos para exportação, uma herança dos tempos coloniais.
     </p>
-    <img alt="Placeholder Image" class="rounded-lg mb-4 mx-auto w-1/4 my-10 pageNoticiasimg" src="./imagensNoticias/america latina.jpg"/>
+    <img alt="Placeholder Image" class="rounded-lg mb-4 mx-auto w-1/4 my-10 pageNoticiasimg" src="../assets/img/america latina.jpg"/>
 </div>
 </div>
 </div>

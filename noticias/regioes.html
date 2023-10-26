@@ -6,11 +6,15 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="./assets/css/Estilo.css" rel="stylesheet"/>
+<link href="../assets/css/global.css" rel="stylesheet"/>
 <link href="favicon1.png" rel="shortcut icon" type="image/x-icon"/>
 <script src="https://cdn.tailwindcss.com"></script>
 <title>AgroLifeNews</title>
 <style>
+    .regioes-container {
+        margin: 2% 8%;
+    }
+
     .pageNoticiasimg {
   --s: 250px;   /* the size of the image */
   --b: 8px;     /* the border thickness*/
@@ -35,7 +39,7 @@
 
 
 .pageNoticiasbody {
-  margin: 0;
+  margin: 10;
   min-height: 100vh;
   display: grid;
   grid-auto-flow: column;
@@ -47,28 +51,28 @@
 </style>
 </head>
 <body>
-<nav style="margin-bottom: 20px;">
-<div class="logo">
-<a href="index.html">
-<i class="fas fa-leaf"></i> AgroLifeNews
+    <nav style="margin-bottom: 20px;"> 
+        <div class="logo">
+            <a href="/">
+                <i class="fas fa-leaf"></i> AgroLifeNews
             </a>
-</div>
-<ul>
-<li> <a href="#"> <i class="fas fa-home"></i> Pagina Inicial </a> </li>
-<li> <a href="Sobre.html"> <i class="fas fa-info-circle"></i> Sobre </a> </li>
-<li> <a href="Anuncio.html"> <i class="fas fa-ad"></i> Anuncios </a> </li>
-<li> <a href="Login.html"> <i class="fas fa-sign-in-alt"></i> Login </a> </li>
-</ul>
-</nav>
+        </div>        
+        <ul>
+            <li> <a href="/"> <i class="fas fa-home"></i> Pagina Inicial </a> </li>
+            <li> <a href="./sobre.html"> <i class="fas fa-info-circle"></i> Sobre </a> </li>
+            <li> <a href="./anuncio.html"> <i class="fas fa-ad"></i> Agricultores </a> </li>
+            <li> <a href="./login.html"> <i class="fas fa-sign-in-alt"></i> Login </a> </li>
+        </ul>
+    </nav>
 <!-- crie uma div centralizada e coloque o texto do regioesBrasil de forma elegante use tailwind -->
-<div class="container">
+<div class="regioes-container">
 <div class="row">
 <div class="col-md-12">
 <h1 class="text-3xl text-center font-bold">Regiões do Brasil</h1>
 </div>
 </div>
 </div>
-<div class="container">
+<div class="regioes-container">
 <div class="row">
 <div class="bg-white text-gray-900 rounded-lg shadow-lg p-8 my-4">
     <h1 class="text-3xl text-center font-bold mb-4 ">Região Norte</h1>
@@ -80,11 +84,11 @@
         pecuária predominantemente extensiva, com criação de gado bovino em áreas de pastagens naturais;
         casos de conflitos entre preservação ambiental, áreas de proteção, áreas de cultivos e atividades de extração madeireira.
     </p>
-    <img alt="Placeholder Image" class="rounded-lg mb-4 mx-auto w-1/4 my-10 pageNoticiasimg" src="./imagensNoticias/imagemRegiaoNorte.png"/>
+    <img alt="Placeholder Image" class="rounded-lg mb-4 mx-auto w-1/4 my-10 pageNoticiasimg" src="../assets/img/imagemRegiaoNorte.png"/>
 </div>
 </div>
 </div>
-<div class="container">
+<div class="regioes-container">
 <div class="row">
 <div class="bg-white text-gray-900 rounded-lg shadow-lg p-8 my-4">
     <h1 class="text-3xl text-center font-bold mb-4">Região Nordeste</h1>
@@ -96,11 +100,11 @@
         frutas entre os principais cultivos, com destaque para melão, uva, manga e abacaxi.
         agricultura de subsistência.
     </p>
-    <img alt="Placeholder Image" class="rounded-lg mb-4 mx-auto w-1/4 my-10 pageNoticiasimg" src="./imagensNoticias/imagemNordeste.png"/>
+    <img alt="Placeholder Image" class="rounded-lg mb-4 mx-auto w-1/4 my-10 pageNoticiasimg" src="../assets/img/imagemNordeste.png"/>
 </div>
 </div>
 </div>
-<div class="container">
+<div class="regioes-container">
 <div class="row">
 <div class="bg-white text-gray-900 rounded-lg shadow-lg p-8 my-4">
     <h1 class="text-3xl text-center font-bold mb-4">Região Centro-Oeste</h1>
@@ -111,11 +115,11 @@
         a criação de gado bovino para corte é expressiva;
         uma das principais produtoras de grãos do país, com destaque para a soja.
     </p>
-    <img alt="Placeholder Image" class="rounded-lg mb-4 mx-auto w-1/4 my-10 pageNoticiasimg" src="./imagensNoticias/imagemCentroOeste.png"/>
+    <img alt="Placeholder Image" class="rounded-lg mb-4 mx-auto w-1/4 my-10 pageNoticiasimg" src="../assets/img/imagemCentroOeste.png"/>
 </div>
 </div>
 </div>
-<div class="container">
+<div class="regioes-container">
 <div class="row">
 <div class="bg-white text-gray-900 rounded-lg shadow-lg p-8 my-4">
     <h1 class="text-3xl text-center font-bold mb-4">Região Sudeste</h1>
@@ -128,11 +132,11 @@
         geração de empregos é limitada ou acontece pelas agroindústrias;
         cultivo de café, cana-de-açúcar, laranjas e outras frutas.
     </p>
-    <img alt="Placeholder Image" class="rounded-lg mb-4 mx-auto w-1/4 my-10 pageNoticiasimg" src="./imagensNoticias/imagemSudeste.png"/>
+    <img alt="Placeholder Image" class="rounded-lg mb-4 mx-auto w-1/4 my-10 pageNoticiasimg" src="../assets/img/imagemSudeste.png"/>
 </div>
 </div>
 </div>
-<div class="container">
+<div class="regioes-container">
 <div class="row">
 <div class="bg-white text-gray-900 rounded-lg shadow-lg p-8 my-4">
     <h1 class="text-3xl text-center font-bold mb-4">Região Sul</h1>
@@ -145,7 +149,7 @@
         cultiva-se soja, milho, cana-de-açúcar e algodão em larga escala;
         na pecuária, a criação de porcos e aves é predominante.
     </p>
-    <img alt="Placeholder Image" class="rounded-lg mb-4 mx-auto w-1/4 my-10 pageNoticiasimg" src="./imagensNoticias/imagemRegiaoSul.png"/>
+    <img alt="Placeholder Image" class="rounded-lg mb-4 mx-auto w-1/4 my-10 pageNoticiasimg" src="../assets/img/imagemRegiaoSul.png"/>
 </div>
 </div>
 </div>

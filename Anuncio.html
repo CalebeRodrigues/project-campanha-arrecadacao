@@ -5,24 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/Estilo.css">
-    <link rel="shortcut icon" href="favicon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/card.css">
+    <link rel="shortcut icon" href="./assets/img/favicon1.png" type="image/x-icon">
     <title>Anuncios</title>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <a href="./Anuncio.html">
-                <i class="fas fa-ad"></i> Anuncios
-            </a>
-        </div>        
-        <ul>
-            <li> <a href="./index.html"> <i class="fas fa-home"></i> Pagina Inicial </a> </li>
-            <li> <a href="./Sobre.html"> <i class="fas fa-info-circle"></i> Sobre </a> </li>
-            <li> <a href="#"> <i class="fas fa-ad"></i> Anuncios </a> </li>
-            <li> <a href="./Especialistas.html"> <i class="fas fa-user"></i> Especialistas </a> </li>
-            <li> <a href="./Login.html"> <i class="fas fa-sign-in-alt"></i> Login </a> </li>
-        </ul>
-    </nav>
+  <nav style="margin-bottom: 20px;"> 
+    <div class="logo">
+        <a href="/">
+            <i class="fas fa-leaf"></i> AgroLifeNews
+        </a>
+    </div>        
+    <ul>
+        <li> <a href="/"> <i class="fas fa-home"></i> Pagina Inicial </a> </li>
+        <li> <a href="./sobre.html"> <i class="fas fa-info-circle"></i> Sobre </a> </li>
+        <li> <a href="./anuncio.html"> <i class="fas fa-ad"></i> Agricultores </a> </li>
+        <li> <a href="./login.html"> <i class="fas fa-sign-in-alt"></i> Login </a> </li>
+    </ul>
+</nav>
+
+
+    <div class="blog-card">
+        <a href="./noticias/agriculta_brasil.html" class="meta">
+          <div class="photo" style="background-image: url('./assets/img/noticia_agricultura.jpg')"></div>
+          <ul class="details">
+            <li>Leia mais</li>
+          </ul>
+        </a>
+        <div class="description">
+          <h1>Ricardo Bandeiras</h1>
+          <h2>Conheça um pouco sobre seus trabalhos</h2>
+          <p> Agricultor localizado na região de Barretos, Ricardo está envolvido com agricultura desde seus 12 anos de idade, mantém uma horta cultivada no vasto...</p>
+          <p class="read-more">
+            <a href="./noticias/agriculta_brasil.html">Ler Mais</a>
+          </p>
+        </div>
+    </div>
+
 </body>
 </html>
