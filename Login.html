@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/Estilo.css">
@@ -20,43 +21,59 @@
             </a>
         </div>        
         <ul>
-            <li> <a href="index.html"> <i class="fas fa-home"></i> Pagina Inicial </a> </li>
-            <li> <a href="Sobre.html"> <i class="fas fa-info-circle"></i> Sobre </a> </li>
-            <li> <a href="Anuncio.html"> <i class="fas fa-ad"></i> Anuncios </a> </li>
-            <li> <a href="Login.html"> <i class="fas fa-sign-in-alt"></i> Login </a> </li>
+            <li> <a href="./index.html"> <i class="fas fa-home"></i> Pagina Inicial </a> </li>
+            <li> <a href="./Sobre.html"> <i class="fas fa-info-circle"></i> Sobre </a> </li>
+            <li> <a href="./Anuncio.html"> <i class="fas fa-ad"></i> Anuncios </a> </li>
+            <li> <a href="./Login.html"> <i class="fas fa-sign-in-alt"></i> Login </a> </li>
         </ul>
     </nav>
 
-    <div class='container'>
-        <div class='card'>
-          <h1> Entrar </h1>
-          
-          <div id='msgError'></div>
-          
-          <div class='label-float'>
-            <input type='text' id='usuario' paceholder='' required>
-            <label id='userLabel' for='usuario'>Usuario</label>
+    <div class="container">
+      <div class="backbox">
+        <div class="loginMsg">
+          <div class="textcontent">
+            <p class="title">Não tem conta?</p>
+            <p>Cadastre-se para publicar.</p>
+            <button id="switch1">Registrar-se</button>
           </div>
-          
-          <div class='label-float'>
-            <input type='password' id='senha' paceholder='' required>
-            <label id='senhaLabel' for='senha'>Senha</label>
-            <i class="fa fa-eye" aria-hidden="true"></i>
-          </div>
-          
-          <div class='justify-center'>
-            <button onclick='entrar()'>Entrar</button>
-          </div>
-          
-          <div class='justify-center'>
-            <hr>
-          </div>
-          
-          <p> Não tem uma conta?
-            <a href='Cadastro.html'> Cadastre-se </a>
-          </p>
-          
         </div>
+        <div class="signupMsg visibility">
+          <div class="textcontent">
+            <p class="title">Tem uma conta?</p>
+            <p>Faça login para ver toda a sua coleção.</p>
+            <button id="switch2">Logar</button>
+          </div>
         </div>
+      </div>
+      <!-- backbox -->
+  
+      <div class="frontbox">
+        <div class="login">
+          <h2>LOGAR</h2>
+          <div class="inputbox">
+            <input type="text" name="email" placeholder="  EMAIL">
+            <input type="password" name="password" placeholder="  PASSWORD">
+          </div>
+          <p>FORGET PASSWORD?</p>
+          <button>Logar</button>
+        </div>
+  
+        <div class="signup hide">
+          <h2>REGISTRAR</h2>
+          <div class="inputbox">
+            <input type="text" name="fullname" placeholder="  FULLNAME">
+            <input type="text" name="email" placeholder="  EMAIL">
+            <input type="password" name="password" placeholder="  PASSWORD">
+          </div>
+          <button>Registrar</button>
+        </div>
+  
+      </div>
+      <!-- frontbox -->
+    </div>
+
+
+    
+    <script src="./TelaLogin.js"></script>
 </body>
 </html>
