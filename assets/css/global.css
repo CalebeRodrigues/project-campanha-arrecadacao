@@ -260,3 +260,64 @@ header {
         margin-left: 20px;
     }
 }
+
+/* Estilos Responsivos para Dispositivos com Largura de Tela de 375px */
+@media screen and (max-width: 390px) {
+    /* Estilos da Barra de Navegação para Dispositivos Móveis */
+    nav {
+        padding: 10px 20px;
+    }
+
+    nav .logo a {
+        font-size: 24px;
+    }
+
+    nav li a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    /* Estilos do Banner para Dispositivos Móveis */
+    .banner {
+        height: 40vh;
+    }
+
+    .texto .titulo {
+        font-size: 40px;
+    }
+
+    .texto .sub_titulo {
+        font-size: 38px;
+    }
+
+    .texto .botoes button {
+        height: 40px;
+        width: 120px;
+        font-size: 14px;
+        margin: 0 6px;
+    }
+
+    /* Estilos dos Cartões para Dispositivos Móveis */
+    .blog-card {
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+
+    .blog-card .description h1 {
+        font-size: 1.4rem;
+    }
+
+    .blog-card .description h2 {
+        font-size: 0.9rem;
+    }
+
+    .blog-card .description .read-more a {
+        font-size: 0.9rem;
+    }
+
+    .blog-card p:before {
+        height: 3px;
+        width: 20px;
+        top: -0.5rem;
+    }
+}
